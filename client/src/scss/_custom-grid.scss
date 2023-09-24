@@ -1,0 +1,40 @@
+
+.grid-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px,17%));
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 5px; 
+  }
+
+  .grid-table-price {
+    display: grid;
+    grid-template-columns: repeat(10,10% );
+    justify-content: start;
+    align-self: start;
+    height: auto;
+    width: 100%;
+    .product-grid{
+        grid-column: 1 / span 3
+    }
+    .quantity-grid{
+        grid-column: 4 / span 3
+    }
+    .total-grid{
+        grid-column: 7 / span 2
+    }
+    .action-grid{
+        grid-column: 9 / span 2
+    }
+    .grid-text{
+        font-size: 12px;
+        color: $gray-700;
+        font-weight: 500;
+    }
+    >div {
+        padding: 10px;
+    }
+    .grid-head-color{
+        background-color: rgb(203, 218, 241);
+    }
+  }
